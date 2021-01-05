@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matthieu LOOCK Développeur Web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+</head>
 <body>
- <section class="hero is-dark is-fullheight">
-   <a href=""></a>
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
-    <header class="navbar">
-      <div class="container">
+<header class="navbar is-dark">
+    <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="http://matthieuloock.com">
+        <a class="navbar-item" href="http://matthieuloock.com">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im00OTguNjk5MjE5IDIyMi42OTUzMTJjLS4wMTU2MjUtLjAxMTcxOC0uMDI3MzQ0LS4wMjczNDMtLjAzOTA2My0uMDM5MDYybC0yMDguODU1NDY4LTIwOC44NDc2NTZjLTguOTAyMzQ0LTguOTA2MjUtMjAuNzM4MjgyLTEzLjgwODU5NC0zMy4zMjgxMjYtMTMuODA4NTk0LTEyLjU4OTg0MyAwLTI0LjQyNTc4MSA0LjkwMjM0NC0zMy4zMzIwMzEgMTMuODA4NTk0bC0yMDguNzQ2MDkzIDIwOC43NDIxODdjLS4wNzAzMTMuMDcwMzEzLS4xNDQ1MzIuMTQ0NTMxLS4yMTA5MzguMjE0ODQ0LTE4LjI4MTI1IDE4LjM4NjcxOS0xOC4yNSA0OC4yMTg3NS4wODk4NDQgNjYuNTU4NTk0IDguMzc4OTA2IDguMzgyODEyIDE5LjQ0MTQwNiAxMy4yMzQzNzUgMzEuMjczNDM3IDEzLjc0NjA5My40ODQzNzUuMDQ2ODc2Ljk2ODc1LjA3MDMxMyAxLjQ1NzAzMS4wNzAzMTNoOC4zMjAzMTN2MTUzLjY5NTMxM2MwIDMwLjQxNzk2OCAyNC43NSA1NS4xNjQwNjIgNTUuMTY3OTY5IDU1LjE2NDA2Mmg4MS43MTA5MzdjOC4yODUxNTcgMCAxNS02LjcxODc1IDE1LTE1di0xMjAuNWMwLTEzLjg3ODkwNiAxMS4yOTI5NjktMjUuMTY3OTY5IDI1LjE3MTg3NS0yNS4xNjc5NjloNDguMTk1MzEzYzEzLjg3ODkwNiAwIDI1LjE2Nzk2OSAxMS4yODkwNjMgMjUuMTY3OTY5IDI1LjE2Nzk2OXYxMjAuNWMwIDguMjgxMjUgNi43MTQ4NDMgMTUgMTUgMTVoODEuNzEwOTM3YzMwLjQyMTg3NSAwIDU1LjE2Nzk2OS0yNC43NDYwOTQgNTUuMTY3OTY5LTU1LjE2NDA2MnYtMTUzLjY5NTMxM2g3LjcxODc1YzEyLjU4NTkzNyAwIDI0LjQyMTg3NS00LjkwMjM0NCAzMy4zMzIwMzEtMTMuODEyNSAxOC4zNTkzNzUtMTguMzY3MTg3IDE4LjM2NzE4Ny00OC4yNTM5MDYuMDI3MzQ0LTY2LjYzMjgxM3ptLTIxLjI0MjE4OCA0NS40MjE4NzZjLTMuMjM4MjgxIDMuMjM4MjgxLTcuNTQyOTY5IDUuMDIzNDM3LTEyLjExNzE4NyA1LjAyMzQzN2gtMjIuNzE4NzVjLTguMjg1MTU2IDAtMTUgNi43MTQ4NDQtMTUgMTV2MTY4LjY5NTMxM2MwIDEzLjg3NS0xMS4yODkwNjMgMjUuMTY0MDYyLTI1LjE2Nzk2OSAyNS4xNjQwNjJoLTY2LjcxMDkzN3YtMTA1LjVjMC0zMC40MTc5NjktMjQuNzQ2MDk0LTU1LjE2Nzk2OS01NS4xNjc5NjktNTUuMTY3OTY5aC00OC4xOTUzMTNjLTMwLjQyMTg3NSAwLTU1LjE3MTg3NSAyNC43NS01NS4xNzE4NzUgNTUuMTY3OTY5djEwNS41aC02Ni43MTA5MzdjLTEzLjg3NSAwLTI1LjE2Nzk2OS0xMS4yODkwNjItMjUuMTY3OTY5LTI1LjE2NDA2MnYtMTY4LjY5NTMxM2MwLTguMjg1MTU2LTYuNzE0ODQ0LTE1LTE1LTE1aC0yMi4zMjgxMjVjLS4yMzQzNzUtLjAxNTYyNS0uNDY0ODQ0LS4wMjczNDQtLjcwMzEyNS0uMDMxMjUtNC40Njg3NS0uMDc4MTI1LTguNjYwMTU2LTEuODUxNTYzLTExLjgwMDc4MS00Ljk5NjA5NC02LjY3OTY4OC02LjY3OTY4Ny02LjY3OTY4OC0xNy41NTA3ODEgMC0yNC4yMzQzNzUuMDAzOTA2IDAgLjAwMzkwNi0uMDAzOTA2LjAwNzgxMi0uMDA3ODEybC4wMTE3MTktLjAxMTcxOSAyMDguODQ3NjU2LTIwOC44Mzk4NDRjMy4yMzQzNzUtMy4yMzgyODEgNy41MzUxNTctNS4wMTk1MzEgMTIuMTEzMjgxLTUuMDE5NTMxIDQuNTc0MjE5IDAgOC44NzUgMS43ODEyNSAxMi4xMTMyODIgNS4wMTk1MzFsMjA4LjgwMDc4MSAyMDguNzk2ODc1Yy4wMzEyNS4wMzEyNS4wNjY0MDYuMDYyNS4wOTc2NTYuMDkzNzUgNi42NDQ1MzEgNi42OTE0MDYgNi42MzI4MTMgMTcuNTM5MDYzLS4wMzEyNSAyNC4yMDcwMzJ6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />          </a>
-          <span class="navbar-burger" data-target="navbarMenuHeroC">
+        <span class="navbar-burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
-          </span>
+        </span>
         </div>
         <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
+        <div class="navbar-end">
             <a class="navbar-item">
-              Présentation
+            Présentation
             </a>
             <a class="navbar-item">
-              Compétences
+            Compétences
             </a>
             <a class="navbar-item">
-              Formation
+            Formation
             </a>
             <a class="navbar-item">
-              Expériences
+            Expériences
             </a>
             <span class="navbar-item">
-              <a class="button is-inverted" href="https://github.com/matthieuloock">
+            <a class="button is-inverted" href="https://github.com/matthieuloock">
                 <span class="icon">
-                  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDAuNjk5MjE5IDAtMjU2IDExNi4zMDA3ODEtMjU2IDI1NyAwIDEzOS44ODI4MTIgMTE0LjI1IDI1NSAyNTYgMjU1IDE0MS41NzQyMTkgMCAyNTYtMTE0Ljk0NTMxMiAyNTYtMjU1IDAtMTQwLjY5OTIxOS0xMTUuMzAwNzgxLTI1Ny0yNTYtMjU3em00NSA0NzcuNWMtMTQuMzk4NDM4IDMtMjkuNjk5MjE5IDQuNS00NSA0LjVzLTMwLjYwMTU2Mi0xLjUtNDUtNC41di03MC4xOTkyMTljMC0xNi44MDA3ODEgNC41LTIyLjgwMDc4MSAxMC41LTMwLjkwMjM0MyAzLjA1NDY4OC0zLjQ5MjE4OCA0Ljg5ODQzOC02LjYyNSAxOC41OTc2NTYtMjcuMjk2ODc2bC0yMy4wOTc2NTYtMy42MDE1NjJjLTU5LjQwMjM0NC04LjY5OTIxOS04Mi44MDA3ODEtMzkuNjAxNTYyLTkyLjEwMTU2Mi02My42MDE1NjItMTItMzIuMDk3NjU3LTUuNjk5MjE5LTcyLjMwMDc4MiAxNS45MDIzNDMtOTcuNzk2ODc2IDMuMzAwNzgxLTMuOTAyMzQzIDYtMTAuNTAzOTA2IDMuNjAxNTYzLTE3LjQwMjM0My00LjUwMzkwNi0xMy44MDA3ODEtMy45MDIzNDQtMzUuNjk5MjE5LS45MDIzNDQtNDQuMTAxNTYzIDE1LjkwNjI1IDIuMjczNDM4IDMyLjI2MTcxOSAxMy42Njc5NjkgNDUuOTAyMzQ0IDIxLjkwMjM0NCA2LjI4NTE1NiAzLjY2Nzk2OSA5LjU4MjAzMSAyLjY5OTIxOSAxMi41OTc2NTYgMyAxMC45NjA5MzgtMi4yODEyNSAyOC4wNTg1OTQtNy44MDA3ODEgNTQuMzAwNzgxLTcuODAwNzgxIDE2LjE5OTIxOSAwIDMzLjMwMDc4MSAyLjM5ODQzNyA1MC4xMDE1NjMgNy4xOTkyMTkgMy4wMDM5MDYtLjA3MDMxMyA3LjgzMjAzMSAyLjQ4NDM3NCAxNi4xOTkyMTgtMi4zOTg0MzggMTQuMjU3ODEzLTguNjg3NSAzMC4wNTg1OTQtMTkuNjkxNDA2IDQ1Ljg5ODQzOC0yMS45MDIzNDQgMyA4LjQwMjM0NCAzLjYwMTU2MiAzMC4zMDA3ODItLjg5ODQzOCA0NC4xMDE1NjMtMi40MDIzNDMgNi44OTg0MzcuMjk2ODc2IDEzLjUgMy42MDE1NjMgMTcuNDAyMzQzIDIxLjU5NzY1NiAyNS41IDI3Ljg5ODQzNyA2NS42OTkyMTkgMTUuODk4NDM3IDk3Ljc5Njg3Ni05LjMwMDc4MSAyNC0zMi42OTkyMTggNTQuOTAyMzQzLTkyLjEwMTU2MiA2My42MDE1NjJsLTIzLjA5NzY1NiAzLjYwMTU2MmMxNC4xNjAxNTYgMjEuMzY3MTg4IDE1LjY1MjM0NCAyMy45Mjk2ODggMTguNjAxNTYyIDI3LjI5Njg3NiA1Ljk5NjA5NCA4LjEwMTU2MiAxMC40OTYwOTQgMTQuMTAxNTYyIDEwLjQ5NjA5NCAzMC45MDIzNDN6bTMwLTguNjk5MjE5di02MS41YzAtMTcuMTAxNTYyLTMuNjAxNTYyLTI4LjUtOC40MDIzNDQtMzYuOTAyMzQzIDQ1LjYwMTU2My0xMi4yOTY4NzYgNzguMDAzOTA2LTM5LjMwMDc4MiA5Mi40MDIzNDQtNzggMTUuMzAwNzgxLTQwLjc5Njg3NiA4LjQwMjM0NC04OS4zOTg0MzgtMTcuMTAxNTYyLTEyMyA0LjUwMzkwNi0yMC4wOTc2NTcgNC41MDM5MDYtNTIuMTk5MjE5LTYuMjk2ODc2LTY3LjE5OTIxOS00LjgwMDc4MS02LjU5NzY1Ny0xMS40MDIzNDMtMTAuMTk5MjE5LTE5LjgwMDc4MS0xMC4xOTkyMTktLjMwMDc4MSAwLS4zMDA3ODEgMC0uMzAwNzgxIDAtMjMuMjYxNzE5IDEuMjU3ODEyLTQxLjU3MDMxMiAxMi45NzI2NTYtNjEuMTk5MjE5IDI0Ljg5ODQzOC0xOC00LjgwMDc4Mi0zNi4zMDA3ODEtNy4xOTkyMTktNTQuNjAxNTYyLTcuMTk5MjE5LTE4LjU5NzY1NyAwLTM3LjE5OTIxOSAyLjY5OTIxOS01My42OTUzMTMgNy4xOTkyMTktMjAuNjY0MDYyLTEyLjQ2MDkzOC0zOC43OTY4NzUtMjMuNjcxODc2LTYyLjcwMzEyNS0yNC44OTg0MzgtNy41IDAtMTQuMTAxNTYyIDMuNjAxNTYyLTE4LjkwMjM0MyAxMC4xOTkyMTktMTAuNzk2ODc2IDE1LTEwLjc5Njg3NiA0Ny4xMDE1NjItNi4yOTY4NzYgNjcuMTk5MjE5LTI1LjUwMzkwNiAzMy42MDE1NjItMzIuNDAyMzQzIDgyLjUtMTcuMTAxNTYyIDEyMyAxNC4zOTg0MzggMzguNjk5MjE4IDQ2LjgwMDc4MSA2NS43MDMxMjQgOTIuNDAyMzQ0IDc4LTMuNzIyNjU2IDYuNTExNzE4LTYuNjY3OTY5IDE0LjkxNDA2Mi03LjgyODEyNSAyNi4yODUxNTYtOS4yMTA5MzggMy4xNzU3ODEtMTcuMTk5MjE5IDQuMjEwOTM3LTI0LjYyODkwNyAyLjAyNzM0NC03LjgzNTkzNy0yLjMxNjQwNy0xMy45NDE0MDYtNy41NDY4NzYtMTkuMjQ2MDkzLTE2LjQ2ODc1LTExLjkxNDA2My0yMC4wMTU2MjYtMzIuMjA3MDMxLTM2LjM1NTQ2OS01NS4zMTI1LTM0LjIzMDQ2OWwyLjYzNjcxOSAyOS44ODI4MTJjMTAuNjk5MjE4LS45ODA0NjkgMjEuMzQ3NjU2IDEwLjMzOTg0NCAyNi44Nzg5MDYgMTkuNjcxODc1IDkuMTI1IDE1LjM2NzE4OCAyMS40MTc5NjggMjUuNDQ1MzEzIDM2LjU0Njg3NSAyOS45MTQwNjMgMTEuMjMwNDY5IDMuMzA4NTkzIDIxLjQ5NjA5MyAzLjIzMDQ2OSAzMi41NTA3ODEuODcxMDkzdjQwLjQ0OTIxOWMtODcuMzAwNzgxLTMwLjYwMTU2Mi0xNTEtMTE0LTE1MS0yMTEuODAwNzgxIDAtMTI0LjE5OTIxOSAxMDEuODAwNzgxLTIyNyAyMjYtMjI3czIyNiAxMDIuODAwNzgxIDIyNiAyMjdjMCA5Ny44MDA3ODEtNjMuNjk5MjE5IDE4MS4xOTkyMTktMTUxIDIxMS44MDA3ODF6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDAuNjk5MjE5IDAtMjU2IDExNi4zMDA3ODEtMjU2IDI1NyAwIDEzOS44ODI4MTIgMTE0LjI1IDI1NSAyNTYgMjU1IDE0MS41NzQyMTkgMCAyNTYtMTE0Ljk0NTMxMiAyNTYtMjU1IDAtMTQwLjY5OTIxOS0xMTUuMzAwNzgxLTI1Ny0yNTYtMjU3em00NSA0NzcuNWMtMTQuMzk4NDM4IDMtMjkuNjk5MjE5IDQuNS00NSA0LjVzLTMwLjYwMTU2Mi0xLjUtNDUtNC41di03MC4xOTkyMTljMC0xNi44MDA3ODEgNC41LTIyLjgwMDc4MSAxMC41LTMwLjkwMjM0MyAzLjA1NDY4OC0zLjQ5MjE4OCA0Ljg5ODQzOC02LjYyNSAxOC41OTc2NTYtMjcuMjk2ODc2bC0yMy4wOTc2NTYtMy42MDE1NjJjLTU5LjQwMjM0NC04LjY5OTIxOS04Mi44MDA3ODEtMzkuNjAxNTYyLTkyLjEwMTU2Mi02My42MDE1NjItMTItMzIuMDk3NjU3LTUuNjk5MjE5LTcyLjMwMDc4MiAxNS45MDIzNDMtOTcuNzk2ODc2IDMuMzAwNzgxLTMuOTAyMzQzIDYtMTAuNTAzOTA2IDMuNjAxNTYzLTE3LjQwMjM0My00LjUwMzkwNi0xMy44MDA3ODEtMy45MDIzNDQtMzUuNjk5MjE5LS45MDIzNDQtNDQuMTAxNTYzIDE1LjkwNjI1IDIuMjczNDM4IDMyLjI2MTcxOSAxMy42Njc5NjkgNDUuOTAyMzQ0IDIxLjkwMjM0NCA2LjI4NTE1NiAzLjY2Nzk2OSA5LjU4MjAzMSAyLjY5OTIxOSAxMi41OTc2NTYgMyAxMC45NjA5MzgtMi4yODEyNSAyOC4wNTg1OTQtNy44MDA3ODEgNTQuMzAwNzgxLTcuODAwNzgxIDE2LjE5OTIxOSAwIDMzLjMwMDc4MSAyLjM5ODQzNyA1MC4xMDE1NjMgNy4xOTkyMTkgMy4wMDM5MDYtLjA3MDMxMyA3LjgzMjAzMSAyLjQ4NDM3NCAxNi4xOTkyMTgtMi4zOTg0MzggMTQuMjU3ODEzLTguNjg3NSAzMC4wNTg1OTQtMTkuNjkxNDA2IDQ1Ljg5ODQzOC0yMS45MDIzNDQgMyA4LjQwMjM0NCAzLjYwMTU2MiAzMC4zMDA3ODItLjg5ODQzOCA0NC4xMDE1NjMtMi40MDIzNDMgNi44OTg0MzcuMjk2ODc2IDEzLjUgMy42MDE1NjMgMTcuNDAyMzQzIDIxLjU5NzY1NiAyNS41IDI3Ljg5ODQzNyA2NS42OTkyMTkgMTUuODk4NDM3IDk3Ljc5Njg3Ni05LjMwMDc4MSAyNC0zMi42OTkyMTggNTQuOTAyMzQzLTkyLjEwMTU2MiA2My42MDE1NjJsLTIzLjA5NzY1NiAzLjYwMTU2MmMxNC4xNjAxNTYgMjEuMzY3MTg4IDE1LjY1MjM0NCAyMy45Mjk2ODggMTguNjAxNTYyIDI3LjI5Njg3NiA1Ljk5NjA5NCA4LjEwMTU2MiAxMC40OTYwOTQgMTQuMTAxNTYyIDEwLjQ5NjA5NCAzMC45MDIzNDN6bTMwLTguNjk5MjE5di02MS41YzAtMTcuMTAxNTYyLTMuNjAxNTYyLTI4LjUtOC40MDIzNDQtMzYuOTAyMzQzIDQ1LjYwMTU2My0xMi4yOTY4NzYgNzguMDAzOTA2LTM5LjMwMDc4MiA5Mi40MDIzNDQtNzggMTUuMzAwNzgxLTQwLjc5Njg3NiA4LjQwMjM0NC04OS4zOTg0MzgtMTcuMTAxNTYyLTEyMyA0LjUwMzkwNi0yMC4wOTc2NTcgNC41MDM5MDYtNTIuMTk5MjE5LTYuMjk2ODc2LTY3LjE5OTIxOS00LjgwMDc4MS02LjU5NzY1Ny0xMS40MDIzNDMtMTAuMTk5MjE5LTE5LjgwMDc4MS0xMC4xOTkyMTktLjMwMDc4MSAwLS4zMDA3ODEgMC0uMzAwNzgxIDAtMjMuMjYxNzE5IDEuMjU3ODEyLTQxLjU3MDMxMiAxMi45NzI2NTYtNjEuMTk5MjE5IDI0Ljg5ODQzOC0xOC00LjgwMDc4Mi0zNi4zMDA3ODEtNy4xOTkyMTktNTQuNjAxNTYyLTcuMTk5MjE5LTE4LjU5NzY1NyAwLTM3LjE5OTIxOSAyLjY5OTIxOS01My42OTUzMTMgNy4xOTkyMTktMjAuNjY0MDYyLTEyLjQ2MDkzOC0zOC43OTY4NzUtMjMuNjcxODc2LTYyLjcwMzEyNS0yNC44OTg0MzgtNy41IDAtMTQuMTAxNTYyIDMuNjAxNTYyLTE4LjkwMjM0MyAxMC4xOTkyMTktMTAuNzk2ODc2IDE1LTEwLjc5Njg3NiA0Ny4xMDE1NjItNi4yOTY4NzYgNjcuMTk5MjE5LTI1LjUwMzkwNiAzMy42MDE1NjItMzIuNDAyMzQzIDgyLjUtMTcuMTAxNTYyIDEyMyAxNC4zOTg0MzggMzguNjk5MjE4IDQ2LjgwMDc4MSA2NS43MDMxMjQgOTIuNDAyMzQ0IDc4LTMuNzIyNjU2IDYuNTExNzE4LTYuNjY3OTY5IDE0LjkxNDA2Mi03LjgyODEyNSAyNi4yODUxNTYtOS4yMTA5MzggMy4xNzU3ODEtMTcuMTk5MjE5IDQuMjEwOTM3LTI0LjYyODkwNyAyLjAyNzM0NC03LjgzNTkzNy0yLjMxNjQwNy0xMy45NDE0MDYtNy41NDY4NzYtMTkuMjQ2MDkzLTE2LjQ2ODc1LTExLjkxNDA2My0yMC4wMTU2MjYtMzIuMjA3MDMxLTM2LjM1NTQ2OS01NS4zMTI1LTM0LjIzMDQ2OWwyLjYzNjcxOSAyOS44ODI4MTJjMTAuNjk5MjE4LS45ODA0NjkgMjEuMzQ3NjU2IDEwLjMzOTg0NCAyNi44Nzg5MDYgMTkuNjcxODc1IDkuMTI1IDE1LjM2NzE4OCAyMS40MTc5NjggMjUuNDQ1MzEzIDM2LjU0Njg3NSAyOS45MTQwNjMgMTEuMjMwNDY5IDMuMzA4NTkzIDIxLjQ5NjA5MyAzLjIzMDQ2OSAzMi41NTA3ODEuODcxMDkzdjQwLjQ0OTIxOWMtODcuMzAwNzgxLTMwLjYwMTU2Mi0xNTEtMTE0LTE1MS0yMTEuODAwNzgxIDAtMTI0LjE5OTIxOSAxMDEuODAwNzgxLTIyNyAyMjYtMjI3czIyNiAxMDIuODAwNzgxIDIyNiAyMjdjMCA5Ny44MDA3ODEtNjMuNjk5MjE5IDE4MS4xOTkyMTktMTUxIDIxMS44MDA3ODF6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
                 </span>
-                <span>Mon Github</span>
-              </a>
+                <span>Github</span>
+            </a>
             </span>
-          </div>
         </div>
-      </div>
-    </header>
-  </div>
-
-  <!-- Hero content: will be in the middle -->
-  <div class="hero-body">
-    <div class="container">
-      <figure class="image is-128x128">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQyNCA0MjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE2Ny4yODkwNjIgMjcyLjEzMjgxMmMtMS42MDE1NjIgMC0zLjIxNDg0My0uNTUwNzgxLTQuNTMxMjUtMS42NzE4NzRsLTQ1LjI5Njg3NC0zOC41NzAzMTNjLTEuNTYyNS0xLjMzMjAzMS0yLjQ2MDkzOC0zLjI3NzM0NC0yLjQ2MDkzOC01LjMzMjAzMSAwLTIuMDUwNzgyLjkwMjM0NC0zLjk5NjA5NCAyLjQ2MDkzOC01LjMyODEyNWw0NS4yOTY4NzQtMzguNTcwMzEzYzIuOTQxNDA3LTIuNTA3ODEyIDcuMzU5Mzc2LTIuMTUyMzQ0IDkuODY3MTg4Ljc4OTA2MyAyLjUwMzkwNiAyLjk0NTMxMiAyLjE1MjM0NCA3LjM2MzI4MS0uNzkyOTY5IDkuODY3MTg3bC0zOS4wMzUxNTYgMzMuMjQyMTg4IDM5LjAzNTE1NiAzMy4yNDIxODdjMi45NDUzMTMgMi41MDc4MTMgMy4yOTY4NzUgNi45MjU3ODEuNzkyOTY5IDkuODY3MTg4LTEuMzg2NzE5IDEuNjI4OTA2LTMuMzU1NDY5IDIuNDY0ODQzLTUuMzM1OTM4IDIuNDY0ODQzem0wIDAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0yNTYuNzEwOTM4IDI3Mi4xMzI4MTJjLTEuOTgwNDY5IDAtMy45NDkyMTktLjgzNTkzNy01LjMzMjAzMi0yLjQ2NDg0My0yLjUwNzgxMi0yLjk0MTQwNy0yLjE1MjM0NC03LjM1OTM3NS43ODkwNjMtOS44NjcxODhsMzkuMDM1MTU2LTMzLjI0MjE4Ny0zOS4wMzUxNTYtMzMuMjQyMTg4Yy0yLjk0MTQwNy0yLjUwMzkwNi0zLjI5Njg3NS02LjkyMTg3NS0uNzg5MDYzLTkuODY3MTg3IDIuNTAzOTA2LTIuOTQxNDA3IDYuOTI1NzgyLTMuMjk2ODc1IDkuODYzMjgyLS43ODkwNjNsNDUuMjk2ODc0IDM4LjU3MDMxM2MxLjU2MjUgMS4zMzIwMzEgMi40NjA5MzggMy4yNzczNDMgMi40NjA5MzggNS4zMjgxMjUgMCAyLjA1NDY4Ny0uODk4NDM4IDQtMi40NjA5MzggNS4zMzIwMzFsLTQ1LjI5Njg3NCAzOC41NzAzMTNjLTEuMzE2NDA3IDEuMTIxMDkzLTIuOTI5Njg4IDEuNjcxODc0LTQuNTMxMjUgMS42NzE4NzR6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE5NS45NjQ4NDQgMzAxLjA2MjVjLS40ODA0NjkgMC0uOTY0ODQ0LS4wNTA3ODEtMS40NTMxMjUtLjE1MjM0NC0zLjc4MTI1LS43OTY4NzUtNi4yMDMxMjUtNC41MTE3MTgtNS40MDYyNS04LjI5Mjk2OGwyOC4yMzA0NjktMTM0LjAzNTE1N2MuNzk2ODc0LTMuNzgxMjUgNC41MDc4MTItNi4yMDMxMjUgOC4yOTI5NjgtNS40MDYyNSAzLjc4MTI1Ljc5Njg3NSA2LjIwMzEyNSA0LjUwNzgxMyA1LjQwNjI1IDguMjkyOTY5bC0yOC4yMzA0NjggMTM0LjAzNTE1NmMtLjY5NTMxMyAzLjI5Njg3NS0zLjYwMTU2MyA1LjU1ODU5NC02LjgzOTg0NCA1LjU1ODU5NHptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzc3IDM3NC4wODU5MzhoLTMzMGMtMjUuOTE0MDYyIDAtNDctMjEuMDgyMDMyLTQ3LTQ3di0yODAuMDg1OTM4YzAtMjUuOTE0MDYyIDIxLjA4NTkzOC00NyA0Ny00N2gzMzBjMjUuOTE0MDYyIDAgNDcgMjEuMDg1OTM4IDQ3IDQ3djI4MC4wODU5MzhjMCAyNS45MTc5NjgtMjEuMDg1OTM4IDQ3LTQ3IDQ3em0tMzMwLTM2MC4wODU5MzhjLTE4LjE5NTMxMiAwLTMzIDE0LjgwNDY4OC0zMyAzM3YyODAuMDg1OTM4YzAgMTguMTk1MzEyIDE0LjgwNDY4OCAzMyAzMyAzM2gzMzBjMTguMTk1MzEyIDAgMzMtMTQuODA0Njg4IDMzLTMzdi0yODAuMDg1OTM4YzAtMTguMTk1MzEyLTE0LjgwNDY4OC0zMy0zMy0zM3ptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDE3IDExMi4wODk4NDRoLTQxMGMtMy44NjcxODggMC03LTMuMTMyODEzLTctNyAwLTMuODYzMjgyIDMuMTMyODEyLTcgNy03aDQxMGMzLjg2NzE4OCAwIDcgMy4xMzY3MTggNyA3IDAgMy44NjcxODctMy4xMzI4MTIgNy03IDd6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTExOS42MDE1NjIgNzguNTkzNzVjLTEyLjIxMDkzNyAwLTIyLjE1MjM0My05Ljk0MTQwNi0yMi4xNTIzNDMtMjIuMTUyMzQ0IDAtMTIuMjE0ODQ0IDkuOTQxNDA2LTIyLjE1MjM0NCAyMi4xNTIzNDMtMjIuMTUyMzQ0IDEyLjIxNDg0NCAwIDIyLjE1MjM0NCA5LjkzNzUgMjIuMTUyMzQ0IDIyLjE1MjM0NCAwIDEyLjIxMDkzOC05LjkzNzUgMjIuMTUyMzQ0LTIyLjE1MjM0NCAyMi4xNTIzNDR6bTAtMzAuMzA0Njg4Yy00LjQ5MjE4NyAwLTguMTUyMzQzIDMuNjU2MjUtOC4xNTIzNDMgOC4xNTIzNDRzMy42NjAxNTYgOC4xNTIzNDQgOC4xNTIzNDMgOC4xNTIzNDRjNC40OTYwOTQgMCA4LjE1MjM0NC0zLjY1NjI1IDguMTUyMzQ0LTguMTUyMzQ0cy0zLjY1NjI1LTguMTUyMzQ0LTguMTUyMzQ0LTguMTUyMzQ0em0wIDAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im01MS41MzkwNjIgNzguMzc4OTA2Yy0xMi4yMTQ4NDMgMC0yMi4xNTIzNDMtOS45Mzc1LTIyLjE1MjM0My0yMi4xNTIzNDQgMC0xMi4yMTQ4NDMgOS45Mzc1LTIyLjE1MjM0MyAyMi4xNTIzNDMtMjIuMTUyMzQzIDEyLjIxNDg0NCAwIDIyLjE1MjM0NCA5LjkzNzUgMjIuMTUyMzQ0IDIyLjE1MjM0MyAwIDEyLjIxNDg0NC05LjkzNzUgMjIuMTUyMzQ0LTIyLjE1MjM0NCAyMi4xNTIzNDR6bTAtMzAuMzA0Njg3Yy00LjQ5MjE4NyAwLTguMTUyMzQzIDMuNjYwMTU2LTguMTUyMzQzIDguMTUyMzQzIDAgNC40OTYwOTQgMy42NjAxNTYgOC4xNTIzNDQgOC4xNTIzNDMgOC4xNTIzNDQgNC40OTYwOTQgMCA4LjE1MjM0NC0zLjY1NjI1IDguMTUyMzQ0LTguMTUyMzQ0IDAtNC40OTIxODctMy42NTYyNS04LjE1MjM0My04LjE1MjM0NC04LjE1MjM0M3ptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTg3LjY2NDA2MiA3OC44MDQ2ODhjLTEyLjIxMDkzNyAwLTIyLjE0ODQzNy05LjkzNzUtMjIuMTQ4NDM3LTIyLjE1MjM0NCAwLTEyLjIxMDkzOCA5LjkzNzUtMjIuMTQ4NDM4IDIyLjE0ODQzNy0yMi4xNDg0MzggMTIuMjE0ODQ0IDAgMjIuMTUyMzQ0IDkuOTM3NSAyMi4xNTIzNDQgMjIuMTQ4NDM4IDAgMTIuMjE0ODQ0LTkuOTM3NSAyMi4xNTIzNDQtMjIuMTUyMzQ0IDIyLjE1MjM0NHptMC0zMC4zMDQ2ODhjLTQuNDkyMTg3IDAtOC4xNDg0MzcgMy42NTYyNS04LjE0ODQzNyA4LjE1MjM0NHMzLjY1NjI1IDguMTUyMzQ0IDguMTQ4NDM3IDguMTUyMzQ0YzQuNDk2MDk0IDAgOC4xNTIzNDQtMy42NTYyNSA4LjE1MjM0NC04LjE1MjM0NHMtMy42NTYyNS04LjE1MjM0NC04LjE1MjM0NC04LjE1MjM0NHptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
-      </figure>
-      <h1 class="title">Matthieu LOOCK</h1>
-      <h2 class="subtitle">Développeur Web</h2>
+        </div>
     </div>
-  </div>
+</header>
+<section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child notification is-primary">
+                    <p class="title">user@working-pc: ~</p>
+                    <p class="subtitle">Développeur Web Remote</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification is-info">
+                    <p class="title">home/picture</p>
+                    <p class="subtitle">selfie.png</p>
+                    <figure class="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/640x480.png">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">Wide tile</p>
+                  <p class="subtitle">Aligned with the right tile</p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-success">
+                <div class="content">
+                  <p class="title">Tall tile</p>
+                  <p class="subtitle">With even more content</p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae nostrum ab esse nisi minus laudantium non? Amet excepturi deleniti laudantium totam magnam sapiente, repellat id quam explicabo cumque dignissimos?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam illum, distinctio iusto dolorem est laudantium aperiam delectus hic, quaerat sequi itaque nobis ea voluptas consequatur ducimus dolores explicabo odit odio! Alias molestias, animi natus voluptates nam ea eveniet quam deleniti nobis, commodi placeat eos corrupti atque? Ipsam ut delectus quaerat exercitationem, repellat voluptatibus! Illo eius rem sint magni saepe nisi libero facilis alias, voluptatibus explicabo omnis accusantium itaque nam a excepturi corporis ut commodi quis eveniet fugit ex adipisci eaque ab labore. Perspiciatis perferendis, inventore sed, beatae magnam ullam nemo dolorem, commodi dignissimos soluta accusantium. Molestiae similique optio accusamus qui sapiente eum, maxime amet, assumenda dolore error repudiandae aperiam, quia mollitia consequatur magni tenetur quod. Maiores amet adipisci, delectus reprehenderit, quasi cumque voluptates iusto quam voluptate nobis, est rerum laboriosam ut dolorem perferendis dolorum repellendus unde facere suscipit exercitationem. Rerum dignissimos labore a ut perferendis enim facere quod debitis earum deserunt suscipit quas sit beatae aut quidem quaerat libero, molestias aliquam accusamus eveniet! Cum corporis nulla provident adipisci nihil tenetur beatae, quisquam ut maiores, quod porro ratione animi culpa cumque, accusamus vitae! Tenetur culpa natus enim fuga, laudantium facilis molestiae, odit id fugit reprehenderit voluptate eveniet nam esse beatae rerum delectus magni? Molestias, vitae quidem ratione qui iusto consectetur nobis laudantium error velit voluptas neque eius esse totam. Eius reiciendis qui deleniti sunt adipisci possimus inventore? Nemo, saepe fuga ex nesciunt culpa reiciendis nam obcaecati a, adipisci aspernatur commodi? Dolor pariatur dolorum esse, similique quos id mollitia perferendis. Corporis dolor maxime, nam incidunt nesciunt, consequuntur ea ut minus nobis eaque ipsa veniam repudiandae voluptatum atque repellendus ratione eligendi non quos? Vel minus illo quod itaque ducimus maxime eaque quae ab sunt aspernatur, soluta reiciendis deleniti tenetur numquam voluptas doloribus nostrum, error corrupti quidem. Nemo, nam itaque facere iste ea consequuntur neque animi odit velit non amet placeat, molestias eos dolorem blanditiis in reiciendis inventore dolor commodi. Eos at provident magni, officiis commodi molestiae vel quod voluptates eveniet dolorem. Quo cumque voluptatibus tempore, iusto commodi dolorem eaque eligendi consectetur debitis deleniti non est, blanditiis voluptate explicabo. Natus quam delectus iste labore ad qui eveniet vero rerum praesentium tenetur incidunt assumenda laboriosam quaerat molestiae neque beatae provident voluptate quos cupiditate, similique quisquam excepturi unde sed non. Placeat perspiciatis quod, dolor itaque omnis inventore. Cumque rem ex eos itaque fugit rerum labore, quae ut corporis molestias. Ab pariatur neque id eaque quod distinctio eveniet commodi ipsa officia culpa. Impedit consequuntur, et dignissimos explicabo repellendus, alias facilis modi ipsa adipisci, aperiam labore? Rerum, quam a voluptatibus assumenda sequi alias quos, itaque, incidunt repellendus repudiandae iure eos? Nemo, non dolores? Optio maxime cum assumenda commodi ipsam voluptatibus excepturi dolorum natus ducimus, dolore cumque dignissimos in, fugit veniam? Provident laborum, dignissimos, ipsa harum veniam architecto, explicabo iste id tempore officiis necessitatibus? Pariatur quae tempore nihil laboriosam possimus harum, doloribus odit asperiores! Laborum molestiae a cumque quisquam ullam laudantium aut accusantium dignissimos dicta. Corrupti, qui ratione non necessitatibus eveniet saepe quis consectetur dolorem recusandae reiciendis iste voluptas? Facilis eligendi dolor provident nam perspiciatis, aliquam ipsam culpa nesciunt. Id sequi porro delectus accusantium rerum, quaerat ipsam? Vitae quasi deleniti amet. Illo tempore et sed enim provident accusantium atque blanditiis odio voluptatibus tenetur. Quos, nesciunt aliquam quibusdam saepe minus odit iure. Atque id, doloremque dolorum unde quod quae praesentium accusantium aliquam? Nam, aspernatur minus quod id natus vero reprehenderit ea veritatis, ex, distinctio non? Fugiat illo rem pariatur, aut ad voluptatem dolorem ea voluptatibus distinctio maxime vitae delectus eos, modi alias iste suscipit enim! Voluptatibus vitae rerum eum, libero asperiores tenetur debitis atque dolorum totam quis eos deleniti quo, repudiandae dolorem quod illum aliquam in esse labore iusto mollitia, animi molestias et? Architecto non consequatur reiciendis, rerum accusamus rem deleniti necessitatibus beatae? Sed vero reiciendis, cum, dolorum repellendus, a dignissimos repellat dolores aliquam eos vel? Veritatis illum quidem sit, nisi qui culpa eos accusantium doloribus error nostrum numquam explicabo rem, odio id labore repellendus impedit fuga commodi quaerat. Cum culpa est veniam quod? Reprehenderit animi id vero ratione, a officiis modi numquam ut molestiae adipisci facilis earum error quibusdam eius dolorem minus cumque fugiat molestias? Ad voluptatem nostrum delectus quasi perspiciatis doloribus at sed neque commodi porro, quidem tempore omnis sequi exercitationem officia ab? Voluptatem quisquam nihil, consectetur nisi minima ut ipsam est esse cum quae eveniet, blanditiis inventore veritatis magni, necessitatibus excepturi! Doloribus at ex cum corrupti, adipisci soluta ratione magni, molestiae nisi placeat consequuntur reprehenderit tempore cumque saepe eum consequatur corporis mollitia veniam. Officia quod accusamus debitis ab libero nihil perferendis! Voluptatibus temporibus similique iure. Modi quibusdam beatae inventore molestias facere natus eaque ad, doloremque, iusto expedita voluptas qui voluptatem omnis adipisci dolorem sequi exercitationem dolores quam corrupti. Accusantium tenetur accusamus maiores inventore neque rerum corporis nisi, aspernatur ex impedit. In tempore, consequatur iure illo aliquam consectetur consequuntur officiis eos illum quae pariatur dolore. Veritatis et fugit soluta repellat placeat, repudiandae vel tenetur harum veniam nihil, expedita consequatur, iste nobis vitae nulla! Nihil vitae architecto deserunt recusandae aliquid pariatur vero commodi, fugit, sed, doloribus eos et officiis quisquam voluptates natus? Adipisci natus vero facilis tempore aperiam ad nam. Nobis optio laboriosam hic maiores nemo iste accusamus aspernatur sunt consequatur cum velit, fugiat architecto adipisci ducimus, laborum aut soluta corrupti deleniti odit dignissimos? Eius, nulla nesciunt vel magnam similique officia blanditiis, odit repellendus praesentium, maxime et laudantium quo aliquid sapiente ab. Magni odio, quo provident et assumenda fugit sed temporibus velit illum, ex, totam voluptatibus. Fuga neque vitae facilis autem consectetur laborum tempora adipisci! Facilis molestias perferendis expedita repellat. Eum, aliquam deserunt. Esse culpa natus ullam, temporibus hic quis est fugit maxime id. Ratione, unde quos voluptatem consequatur molestias odit minus aut distinctio corrupti nobis iure tempora quae nisi ab atque. Cupiditate officiis accusamus cumque rem nulla ullam magni exercitationem a eum nostrum neque, dolor vero veritatis optio natus quia. Possimus et nesciunt ipsa harum sed omnis, repellat veritatis sunt similique dolorum, adipisci facilis dolores voluptate sequi tenetur vel iste quod non aliquam atque fugiat deleniti beatae.
+      </h2>
+    </div>
+</section>
 
-  <!-- Hero footer: will stick at the bottom -->
-<footer>
-  <div class="container">
-    <p class="is-size-7 has-text-centered has-text-gray-dark">Matthieu LOOCK 2020 Tous droits réservés</p>
-  </div>
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Resumé</strong> par <a href="https://jgthms.com">Matthieu LOOCK</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+    </div>
 </footer>
 
 
-
-  </section>
 </body>
-</html>
-
